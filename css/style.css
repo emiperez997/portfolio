@@ -31,7 +31,6 @@ body {
 
 .container {
   height: 100vh;
-
   overflow: hidden;
   gap: 50px;
 }
@@ -516,7 +515,14 @@ h2 {
   opacity: 1;
 }
 
+@media (width > 500px) {
+  .slide {
+    width: 500px;
+  }
+}
+
 /* Tablet */
+
 @media (width > 768px) {
   .slide {
     width: 500px;

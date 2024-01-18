@@ -11,9 +11,16 @@ const page = locationsObject[currentLocation];
 
 showPage(page);
 
-function showPage(n) {
+function showPage(n, event) {
   const menuLink = document.getElementsByClassName("menu-link");
   const menuItem = document.getElementsByClassName("item");
+  const slides = document.getElementsByClassName("slide");
+
+  if (currentLocation === "") {
+    document.getElementById("home").scrollIntoView();
+  } else {
+    slides[n].scrollIntoView();
+  }
 
   if (menuItem[n].href === currentLocation) {
     menuItem[n].classList.add("active");
@@ -74,4 +81,13 @@ copyEmailButton.addEventListener("click", () => {
   setTimeout(() => {
     copyEmailButton.innerHTML = originalHtml;
   }, 2000);
+});
+
+// If height changes reload page
+const height = window.innerHeight;
+
+window.addEventListener("resize", () => {
+  if (height !== window.innerHeight) {
+    location.reload();
+  }
 });
