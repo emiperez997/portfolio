@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emiliano Perez - Fullstack Developer</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/958f7d532c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <section class="menu">
+      <ul>
+        <li>
+          <a href="/" onclick="showPage(0)" class="menu-link">
+            <div class="tooltip">
+              <img
+                src="./img/home-icon.svg"
+                alt="Home icon"
+                class="home-icon item"
+              />
+              <span class="tooltiptext">Inicio</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/#about" onclick="showPage(1)" class="menu-link">
+            <div class="tooltip">
+              <span class="menu-dot item"></span>
+              <span class="tooltiptext">Acerca de mi</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/#projects" onclick="showPage(2)" class="menu-link">
+            <div class="tooltip">
+              <span class="menu-dot item"></span>
+              <span class="tooltiptext">Proyectos</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/#skills" onclick="showPage(3)" class="menu-link">
+            <div class="tooltip">
+              <span class="menu-dot item"></span>
+              <span class="tooltiptext">Habilidades</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/#contact" onclick="showPage(4)" class="menu-link">
+            <div class="tooltip">
+              <span class="menu-dot item"></span>
+              <span class="tooltiptext">Contacto</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="container">
+      <section class="slide">
+        <h1>
+          Emiliano Perez <br />
+          <span>Fullstack Developer</span>
+        </h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#about" class="menu-item" onclick="showPage(1)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                  />
+                </svg>
+                Acerca de mi
+              </a>
+            </li>
+            <li>
+              <a href="#projects" class="menu-item" onclick="showPage(2)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 0 0-1.883 2.542l.857 6a2.25 2.25 0 0 0 2.227 1.932H19.05a2.25 2.25 0 0 0 2.227-1.932l.857-6a2.25 2.25 0 0 0-1.883-2.542m-16.5 0V6A2.25 2.25 0 0 1 6 3.75h3.879a1.5 1.5 0 0 1 1.06.44l2.122 2.12a1.5 1.5 0 0 0 1.06.44H18A2.25 2.25 0 0 1 20.25 9v.776"
+                  />
+                </svg>
+
+                Projectos
+              </a>
+            </li>
+            <li>
+              <a href="#skills" class="menu-item" onclick="showPage(3)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.559.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.929.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.398.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.272-.806.108-1.204-.165-.397-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                </svg>
+
+                Habilidades
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="menu-item" onclick="showPage(4)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                  />
+                </svg>
+
+                Contacto
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section id="about" class="about slide">
+        <h2>Acerca de mi</h2>
+
+        <div>
+          <p>
+            ¡Buenas! Me presento, soy <strong>Fullstack Developer</strong> con
+            una pasión por aprender <em> nuevas tecnologías </em> y construir
+            Aplicaciones Web. Actualmente busco desarrollarme como programador y
+            poder aportar mis conocimientos en un equipo de trabajo.
+          </p>
+          <img src="/img/desktop.svg" alt="Desktop PC" class="about-icon" />
+        </div>
+        <div>
+          <img src="/img/coding.svg" alt="Coding" class="about-icon" />
+          <p>
+            Aprendo de forma autodidacta y me gusta trabajar en equipo. Me
+            considero una persona responsable, proactiva y con muchas ganas de
+            aprender. Me gusta estar en constante aprendizaje y mejorar mis
+            habilidades.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="slide projects">
+        <h2>Projectos</h2>
+        <p>
+          En esta sección se encuentran algunos de los proyectos que he
+          realizado o en los que he participado, con su respectivo código fuente
+          y demo.
+        </p>
+        <ul class="projects-nav">
+          <li>
+            <span class="dots" onclick="currentSlide(1)"></span>
+          </li>
+          <li>
+            <span class="dots" onclick="currentSlide(2)"></span>
+          </li>
+          <li>
+            <span class="dots" onclick="currentSlide(3)"></span>
+          </li>
+          <li>
+            <span class="dots" onclick="currentSlide(4)"></span>
+          </li>
+          <li>
+            <span class="dots" onclick="currentSlide(5)"></span>
+          </li>
+        </ul>
+        <ul class="projects-list">
+          <li class="project-item">
+            <h3>Sistema de inventario</h3>
+            <div class="project-detail">
+              <p>
+                Sistema de inventario para una empresa de venta de productos de
+                limpieza. Se utilizó C#, .NET y SQL Server para el backend y
+                React.js para el frontend.
+              </p>
+              <img src="./img/projects/inventory-system.png" alt="" />
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/emiperez997/GestionStock"
+                target="_blank"
+              >
+                <img src="./img/contact/github.svg" alt="" class="icon" />
+              </a>
+            </div>
+          </li>
+          <li class="project-item">
+            <h3>E-commerce - Alkemy</h3>
+            <div class="project-detail">
+              <p>
+                Proyecto final del curso de React.js de Alkemy. Se utilizó React
+                y la API de FakeStore para crear un e-commerce.
+              </p>
+              <img src="./img/projects/alkemy-ecommerce.png" alt="" />
+            </div>
+            <div class="project-links">
+              <a
+                href="https://emiperez997.github.io/ecommerce-alkemy/"
+                target="_blank"
+              >
+                <img src="./img/contact/code.svg" alt="" class="icon" />
+              </a>
+              <a
+                href="https://github.com/emiperez997/ecommerce-alkemy"
+                target="_blank"
+              >
+                <img src="./img/contact/github.svg" alt="" class="icon" />
+              </a>
+            </div>
+          </li>
+          <li class="project-item">
+            <h3>Random Verse</h3>
+            <div class="project-detail">
+              <p>
+                Proyecto hecho con React.js que consume una API de la Biblia y
+                muestra un versículo aleatorio.
+              </p>
+              <img src="./img/projects/random-verse.png" alt="" />
+            </div>
+            <div class="project-links">
+              <a
+                href="https://emiperez997.github.io/randomVerse_generator_app/"
+                target="_blank"
+              >
+                <img src="./img/contact/code.svg" alt="" class="icon" />
+              </a>
+              <a
+                href="https://github.com/emiperez997/randomVerse_generator_app"
+                target="_blank"
+              >
+                <img src="./img/contact/github.svg" alt="" class="icon" />
+              </a>
+            </div>
+          </li>
+          <li class="project-item">
+            <h3>World Wide - Landing Page</h3>
+            <div class="project-detail">
+              <p>
+                Landing Page de muestra para la materia de Producción Digital 2
+                de la Universidad de Palermo.
+              </p>
+              <img src="./img/projects/world-wide.png" alt="" />
+            </div>
+            <div class="project-links">
+              <a
+                href="https://emiperez997.github.io/worldwide-project/"
+                target="_blank"
+              >
+                <img src="./img/contact/code.svg" alt="" class="icon" />
+              </a>
+              <a
+                href="https://github.com/emiperez997/worldwide-project"
+                target="_blank"
+              >
+                <img src="./img/contact/github.svg" alt="" class="icon" />
+              </a>
+            </div>
+          </li>
+          <li class="project-item">
+            <h3>Digistock - Codo a Codo</h3>
+            <div class="project-detail">
+              <p>
+                Página web hecha en grupo para curso de Fullstack de Python de
+                Codo a Codo.
+              </p>
+              <img src="./img/projects/digistock.png" alt="" />
+            </div>
+            <div class="project-links">
+              <a
+                href="https://martinigarza.github.io/DigiStock.github.io/"
+                target="_blank"
+              >
+                <img src="./img/contact/code.svg" alt="" class="icon" />
+              </a>
+              <a
+                href="https://github.com/martinigarza/DigiStock.github.io"
+                target="_blank"
+              >
+                <img src="./img/contact/github.svg" alt="" class="icon" />
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Nav for slide with projects -->
+      </section>
+
+      <section id="skills" class="slide skills">
+        <h2>Habilidades</h2>
+        <article>
+          <div class="technical-skills">
+            <h3>Técnicas</h3>
+            <div class="technical-list">
+              <img src="./img/skills/html.svg" alt="" />
+              <img src="./img/skills/css3.svg" alt="" />
+              <img src="./img/skills/js.svg" alt="" />
+              <img src="./img/skills/react.svg" alt="" />
+              <img src="./img/skills/nodejs.svg" alt="" />
+              <img src="./img/skills/git.svg" alt="" />
+              <img src="./img/skills/java.svg" alt="" />
+              <img src="./img/skills/spring.svg" alt="" />
+              <img src="./img/skills/python.svg" alt="" />
+              <img src="./img/skills/django.svg" alt="" />
+              <img src="./img/skills/csharp.svg" alt="" />
+              <img src="./img/skills/dotnet.svg" alt="" />
+              <img src="./img/skills/postgresql.svg" alt="" />
+              <img src="./img/skills/mysql.svg" alt="" />
+            </div>
+          </div>
+          <div class="soft-skills">
+            <h3>Blandas</h3>
+            <ul>
+              <li>Trabajo en equipo</li>
+              <li>Comunicación</li>
+              <li>Responsabilidad</li>
+              <li>Proactividad</li>
+              <li>Autodidacta</li>
+              <li>Adaptabilidad</li>
+              <li>Resolución de problemas</li>
+              <li>Capacidad de aprendizaje</li>
+              <li>Empatía</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section id="contact" class="slide">
+        <h2>Contact</h2>
+        <ul class="socials">
+          <li>
+            <a href="https://www.linkedin.com/in/emiliano-perez-/">
+              <img
+                src="./img/contact/linkedin.svg"
+                alt="Linkedin icon"
+                class="contact-icon"
+              />
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                src="./img/contact/frontendmentor.svg"
+                alt="Frontend Mentor Icon"
+                class="contact-icon"
+              />
+              Frontend Mentor
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                src="./img/contact/github.svg"
+                alt="Github Icon"
+                class="contact-icon"
+              />
+              GitHub
+            </a>
+          </li>
+        </ul>
+        <p>
+          Hecho con
+          <span>❤️</span>
+          por Emiliano Perez
+        </p>
+        <article class="mail">
+          ¿Te interesa contactarme?
+          <br />
+          <span>¡Envíame un mail!</span>
+          <span class="mail-copy">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="mail-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z"
+              />
+            </svg>
+
+            <span class="email"> emi.perez997@gmail.com </span>
+          </span>
+        </article>
+      </section>
+    </div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
