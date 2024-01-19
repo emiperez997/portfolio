@@ -504,7 +504,7 @@ h2 {
 }
 
 /* Media Queries */
-@media (height < 650px) {
+@media (height < 750px) {
   .project-detail img {
     height: 150px;
     width: auto;
