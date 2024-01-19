@@ -11,8 +11,7 @@ const page = locationsObject[currentLocation];
 
 showPage(page);
 
-function showPage(n, event) {
-  const menuLink = document.getElementsByClassName("menu-link");
+function showPage(n) {
   const menuItem = document.getElementsByClassName("item");
   const slides = document.getElementsByClassName("slide");
 
@@ -21,6 +20,14 @@ function showPage(n, event) {
   } else {
     slides[n].scrollIntoView();
   }
+
+  for (let i = 0; i < slides.length; i++) {
+    if (i != n) {
+      slides[i].classList.add("hide");
+    }
+  }
+
+  slides[n].classList.remove("hide");
 
   if (menuItem[n].href === currentLocation) {
     menuItem[n].classList.add("active");
