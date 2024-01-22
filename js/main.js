@@ -84,7 +84,7 @@ copyEmailButton.addEventListener("click", () => {
   const email = document.querySelector(".email");
   const emailValue = email.textContent;
   navigator.clipboard.writeText(emailValue);
-  copyEmailButton.textContent = "Copied!";
+  copyEmailButton.textContent = "¡Copiado!";
   setTimeout(() => {
     copyEmailButton.innerHTML = originalHtml;
   }, 2000);

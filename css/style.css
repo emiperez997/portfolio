@@ -356,14 +356,30 @@ h2 {
   gap: 20px;
 }
 
-.technical-list {
-  width: 90%;
+.technical-stacks {
+  width: 100%;
+  text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+}
+
+.technical-stacks h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.technical-stacks div {
+  width: 100%;
+  text-align: center;
+  display: flex;
   flex-direction: row;
-  gap: 20px;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 .technical-skills img {
@@ -569,6 +585,10 @@ h2 {
 
   .projects h3 {
     font-size: 2rem;
+  }
+
+  .skills article {
+    flex-direction: row;
   }
 }
 
