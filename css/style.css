@@ -528,6 +528,10 @@ h2 {
   .soft-skills ul li {
     font-size: 1rem;
   }
+
+  .projects h3 {
+    font-size: 1.5rem;
+  }
 }
 
 /* Tablet */
@@ -557,6 +561,14 @@ h2 {
 
   .soft-skills ul li {
     font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .projects h3 {
+    font-size: 2rem;
   }
 }
 
