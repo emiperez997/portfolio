@@ -275,8 +275,8 @@ h2 {
 
 .project-detail img {
   object-fit: cover;
-  width: auto;
-  height: 120px;
+  width: 60%;
+  height: auto;
   border-radius: 15px;
 }
 
@@ -590,6 +590,10 @@ h2 {
   .skills article {
     flex-direction: row;
   }
+
+  .technical-stacks h4 {
+    font-size: 1.6rem;
+  }
 }
 
 /* Desktop */
@@ -600,6 +604,6 @@ h2 {
   }
 
   .project-detail img {
-    width: 50%;
+    width: 70%;
   }
 }
