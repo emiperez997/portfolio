@@ -1,0 +1,79 @@
+{
+  "projects": [
+    {
+      "title": "E-commerce - Alkemy",
+      "description": "Proyecto final del curso de React.js de Alkemy. E-commerce de productos de tecnología. Desarrollado con React.js, Tailwind CSS, FakeStore API y manejo del LocalStorage para el carrito de compras.",
+      "github": "https://github.com/emiperez997/ecommerce-alkemy",
+      "demo": "https://emiperez997.github.io/ecommerce-alkemy/",
+      "image": "/projects/alkemy-ecommerce.webp",
+      "date": 2023
+    },
+    {
+      "title": "Random Verse",
+      "description": "Aplicación web que muestra un versículo aleatorio de la Biblia. Desarrollado con React.js, Tailwind CSS y la API de 'The Bible' para obtener los versículos.",
+      "github": "https://github.com/emiperez997/randomVerse_generator_app",
+      "demo": "https://emiperez997.github.io/randomVerse_generator_app/",
+      "image": "/projects/random-verse.webp",
+      "date": 2023
+    },
+    {
+      "title": "World Wide",
+      "description": "Landing page de una agencia de viajes. Desarrollado con HTMLy Bootstrap 5. Es un proyecto de muestra para la materia de Producción Digital 2 de la Universidad de Palermo que dicto como profesor.",
+      "github": "https://github.com/emiperez997/worldwide-project",
+      "demo": "https://emiperez997.github.io/worldwide-project/",
+      "image": "/projects/world-wide.webp",
+      "date": 2023
+    },
+    {
+      "title": "Digistock",
+      "description": "Proyecto final del curso de FullStack Python de Codo a Codo. Desarrollamos un Frontend con HTML, CSS y JavaScript y un Backend con Python y Django. El Frontend fue desarrollado en conjunto y el Backend fue hecho por mi.",
+      "github": "https://github.com/martinigarza/DigiStock.github.io",
+      "demo": "https://martinigarza.github.io/DigiStock.github.io/",
+      "image": "/projects/digistock.webp",
+      "date": 2023
+    },
+    {
+      "title": "Yudith Autoservicio",
+      "description": "Landing page para un cliente, dueño de un autoservicio. Desarrollado con HTML y Bootstrap. Para este proyecto el cliente me proporcionó los datos necesarios para el desarrollo del sitio. El diseño fue realizado por mi.",
+      "github": "https://github.com/emiperez997/yudith-autoservicio",
+      "demo": "https://emiperez997.github.io/yudith-autoservicio/",
+      "image": "/projects/yudith-autoservicio.webp",
+      "date": 2020
+    }
+  ],
+  "skills": {
+    "technicalls": {
+      "frontend": [
+        "/skills/html",
+        "/skills/css3",
+        "/skills/js",
+        "/skills/react"
+      ],
+      "backend": [
+        "/skills/csharp",
+        "/skills/dotnet",
+        "/skills/python",
+        "/skills/django",
+        "/skills/postgresql",
+        "/skills/mysql"
+      ],
+      "others": [
+        "/skills/git",
+        "/skills/docker",
+        "/skills/nodejs",
+        "/skills/postman"
+      ]
+    },
+    "soft": [
+      "Trabajo en equipo",
+      "Comunicación",
+      "Responsabilidad",
+      "Proactividad",
+      "Autodidacta",
+      "Adaptabilidad",
+      "Resolución de problemas",
+      "Capacidad de aprendizaje",
+      "Empatía"
+    ]
+  }
+}

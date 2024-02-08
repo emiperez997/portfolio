@@ -1,0 +1,47 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import { NavMenu } from "../components/NavMenu";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body
+    class="w-screen height flex flex-col justify-center items-center gap-5 bg-orange-100 dark:bg-gray-700 py-20"
+  >
+    <slot />
+    <NavMenu client:only />
+    <style is:global>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
+
+      html {
+        font-family: "Nunito", sans-serif;
+        color-scheme: dark light;
+      }
+
+      .height {
+        height: 100%;
+      }
+
+      @media (height > 800px) {
+        .height {
+          height: 100vh;
+        }
+      }
+    </style>
+  </body>
+</html>

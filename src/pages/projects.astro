@@ -1,0 +1,13 @@
+---
+import { ProjectList } from "../components/ProjectList";
+import Layout from "../layouts/Layout.astro";
+import Title from "../components/Title.astro";
+---
+
+<Layout title="Emiliano Perez - Proyectos">
+  <Title>
+    <span slot="title">Proyectos</span>
+  </Title>
+
+  <ProjectList client:only />
+</Layout>
