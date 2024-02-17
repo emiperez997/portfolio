@@ -1,15 +1,8 @@
 import { useState } from "preact/hooks";
+import { locations } from "../utils/locations";
 
 export function NavMenu() {
   const [location, setLocation] = useState(window.location.pathname);
-
-  const locations = {
-    "/": "home",
-    "/about": "about",
-    "/projects": "projects",
-    "/skills": "skills",
-    "/contact": "contact",
-  };
 
   const active = "w-8 h-8 rounded-full text-orange-500 hover:text-orange-600";
   const inactive = "w-6 h-6 rounded-full text-orange-200 hover:text-orange-500";

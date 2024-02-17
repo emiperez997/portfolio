@@ -1,12 +1,16 @@
 ---
 import { ViewTransitions } from "astro:transitions";
 import { NavMenu } from "../components/NavMenu";
+import { locations } from "../utils/locations";
 
 interface Props {
   title: string;
 }
 
 const { title } = Astro.props;
+const { pathname } = Astro.url;
+
+console.log(pathname);
 ---
 
 <!doctype html>
@@ -21,7 +25,19 @@ const { title } = Astro.props;
     <ViewTransitions />
   </head>
   <body
-    class="w-screen height flex flex-col justify-center items-center gap-5 bg-orange-100 dark:bg-gray-700 py-20"
+    class:list={[
+      "w-screen pb-30 flex flex-col justify-center items-center gap-5 bg-orange-100 dark:bg-gray-700 py-30",
+      {
+        "height-custom":
+          pathname.includes("/about") || pathname.includes("/skills"),
+      },
+      {
+        "h-screen":
+          pathname === "/" ||
+          pathname.includes("/contact") ||
+          pathname.includes("/projects"),
+      },
+    ]}
   >
     <slot />
     <NavMenu client:only />
@@ -33,12 +49,13 @@ const { title } = Astro.props;
         color-scheme: dark light;
       }
 
-      .height {
-        height: 100%;
+      .height-custom {
+        height: calc(100vh + 5rem);
+        padding: 5rem 0;
       }
 
       @media (height > 800px) {
-        .height {
+        .height-custom {
           height: 100vh;
         }
       }
