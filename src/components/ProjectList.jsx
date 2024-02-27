@@ -7,7 +7,7 @@ export function ProjectList() {
   const projects = [];
   return (
     <div class="flex flex-col items-center gap-5 w-full overflow-hidden justify-center">
-      <div class="flex w-80 sm:w-[550px] justify-center items-center bg-teal-700 p-5 md:p-20 sm:rounded-xl">
+      <div class="flex w-80 sm:w-[550px] justify-center items-center bg-teal-700 p-5 md:p-20 sm:rounded-xl text-white">
         {data.projects.map(
           (project, index) =>
             slideIndex === index && (
