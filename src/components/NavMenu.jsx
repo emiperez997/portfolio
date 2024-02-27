@@ -1,5 +1,4 @@
 import { useState } from "preact/hooks";
-import { locations } from "../utils/locations";
 
 export function NavMenu() {
   const [location, setLocation] = useState(window.location.pathname);
@@ -12,7 +11,7 @@ export function NavMenu() {
       <ul class="flex gap-5 md:gap-8 items-center">
         <li>
           <a href="/">
-            {locations[location] === "home" ? (
+            {location === "/" ? (
               <svg
                 class={active}
                 viewBox="0 0 24 24"
@@ -48,7 +47,7 @@ export function NavMenu() {
         <li>
           <a href="/about">
             <svg
-              class={`${locations[location] === "about" ? active : inactive}`}
+              class={`${location.includes("about") ? active : inactive}`}
               viewBox="0 0 24 24"
               stroke-width="2"
               stroke="currentColor"
@@ -64,7 +63,7 @@ export function NavMenu() {
         </li>
         <li>
           <a href="/projects">
-            {locations[location] === "projects" ? (
+            {location.includes("projects") ? (
               <>
                 <svg
                   class={`${active}`}
@@ -100,7 +99,7 @@ export function NavMenu() {
         <li>
           <a href="/skills">
             <svg
-              class={`${locations[location] === "skills" ? active : inactive}`}
+              class={`${location.includes("skills") ? active : inactive}`}
               viewBox="0 0 24 24"
               stroke-width="2"
               stroke="currentColor"
@@ -118,7 +117,7 @@ export function NavMenu() {
           <a href="/contact">
             <svg
               class={`w-6 h-6 rounded-full ${
-                locations[location] === "contact" ? active : inactive
+                location.includes("contact") ? active : inactive
               }`}
               viewBox="0 0 24 24"
               stroke-width="2"
