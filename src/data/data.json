@@ -6,7 +6,8 @@
       "github": "https://github.com/emiperez997/ecommerce-alkemy",
       "demo": "https://emiperez997.github.io/ecommerce-alkemy/",
       "image": "/projects/alkemy-ecommerce.webp",
-      "date": 2023
+      "date": 2023,
+      "technologies": ["React.js", "Tailwind CSS", "FakeStore API"]
     },
     {
       "title": "Random Verse",
@@ -14,15 +15,17 @@
       "github": "https://github.com/emiperez997/randomVerse_generator_app",
       "demo": "https://emiperez997.github.io/randomVerse_generator_app/",
       "image": "/projects/random-verse.webp",
-      "date": 2023
+      "date": 2023,
+      "technologies": ["React.js", "Tailwind CSS"]
     },
     {
       "title": "World Wide",
-      "description": "Landing page de una agencia de viajes. Desarrollado con HTMLy Bootstrap 5. Es un proyecto de muestra para la materia de Producción Digital 2 de la Universidad de Palermo que dicto como profesor.",
+      "description": "Landing page de una agencia de viajes. Desarrollado con HTML y Bootstrap 5. Es un proyecto de muestra para la materia de Producción Digital 2 de la Universidad de Palermo que dicto como profesor.",
       "github": "https://github.com/emiperez997/worldwide-project",
       "demo": "https://emiperez997.github.io/worldwide-project/",
       "image": "/projects/world-wide.webp",
-      "date": 2023
+      "date": 2023,
+      "technologies": ["HTML 5", "Bootstrap 5"]
     },
     {
       "title": "Digistock",
@@ -30,7 +33,8 @@
       "github": "https://github.com/martinigarza/DigiStock.github.io",
       "demo": "https://martinigarza.github.io/DigiStock.github.io/",
       "image": "/projects/digistock.webp",
-      "date": 2023
+      "date": 2023,
+      "technologies": ["HTML 5", "CSS 3", "JavaScript", "Python", "Django"]
     },
     {
       "title": "Yudith Autoservicio",
@@ -38,30 +42,73 @@
       "github": "https://github.com/emiperez997/yudith-autoservicio",
       "demo": "https://emiperez997.github.io/yudith-autoservicio/",
       "image": "/projects/yudith-autoservicio.webp",
-      "date": 2020
+      "date": 2020,
+      "technologies": ["HTML 5", "CSS 3", "Bootstrap"]
     }
   ],
   "skills": {
     "technicalls": {
       "frontend": [
-        "/skills/html",
-        "/skills/css3",
-        "/skills/js",
-        "/skills/react"
+        {
+          "name": "HTML 5",
+          "url": "/skills/html"
+        },
+        {
+          "name": "CSS 3",
+          "url": "/skills/css3"
+        },
+        {
+          "name": "JavaScript",
+          "url": "/skills/js"
+        },
+        {
+          "name": "React",
+          "url": "/skills/react"
+        }
       ],
       "backend": [
-        "/skills/csharp",
-        "/skills/dotnet",
-        "/skills/python",
-        "/skills/django",
-        "/skills/postgresql",
-        "/skills/mysql"
+        {
+          "name": "TypeScript",
+          "url": "/skills/typescript"
+        },
+        {
+          "name": "Nest.js",
+          "url": "/skills/nestjs"
+        },
+        {
+          "name": "Prisma",
+          "url": "/skills/prisma"
+        },
+        {
+          "name": "PostgreSQL",
+          "url": "/skills/postgresql"
+        },
+        {
+          "name": "MySQL",
+          "url": "/skills/mysql"
+        },
+        {
+          "name": "MongoDB",
+          "url": "/skills/mongodb"
+        }
       ],
       "others": [
-        "/skills/git",
-        "/skills/docker",
-        "/skills/nodejs",
-        "/skills/postman"
+        {
+          "name": "Git",
+          "url": "/skills/git"
+        },
+        {
+          "name": "Docker",
+          "url": "/skills/docker"
+        },
+        {
+          "name": "Node.js",
+          "url": "/skills/nodejs"
+        },
+        {
+          "name": "Postman",
+          "url": "/skills/postman"
+        }
       ]
     },
     "soft": [

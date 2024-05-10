@@ -1,0 +1,19 @@
+---
+interface Props {
+  name: string;
+
+  link: string;
+}
+
+const { name, link } = Astro.props;
+---
+
+<div
+  class="w-full p-6 border rounded-lg shadow bg-gray-800 border-gray-700 flex flex-col sm:flex-row gap-5 items-center justify-between hover:scale-105 transition-all"
+>
+  <img class="w-16" src=`${link}.svg` alt={name} />
+
+  <h5 class="mb-2 text-lg sm:text-xl font-bold tracking-tighttext-white">
+    {name}
+  </h5>
+</div>

@@ -1,0 +1,56 @@
+---
+import data from "../data/data.json";
+import Card from "./TechCard.astro";
+---
+
+<div
+  class="h-auto pt-20 p-4 w-full xl:w-[1120px] flex flex-col justify-center gap-5"
+  id="tecnologias"
+>
+  <h2
+    class="text-4xl font-extrabold leading-tight tracking-tight text-orange-400 sm:text-5xl"
+  >
+    Tecnologías
+  </h2>
+
+  <div class="w-full flex flex-col items-center justify-center gap-5 xl:gap-10">
+    <h4 class="text-2xl sm:text-3xl self-start xl:self-center">Frontend</h4>
+    <div class="w-full flex flex-col gap-5">
+      <section
+        class="grid grid-cols-1 md:grid-cols-2 gap-5 justify-center items-center"
+      >
+        {
+          data.skills.technicalls.frontend.map((skill) => (
+            <Card name={skill.name} link={skill.url} />
+          ))
+        }
+      </section>
+    </div>
+
+    <h4 class="text-2xl sm:text-3xl self-start xl:self-center">Backend</h4>
+    <div class="w-full flex flex-col gap-5">
+      <section
+        class="grid grid-cols-1 md:grid-cols-2 gap-5 justify-center items-center"
+      >
+        {
+          data.skills.technicalls.backend.map((skill) => (
+            <Card name={skill.name} link={skill.url} />
+          ))
+        }
+      </section>
+    </div>
+
+    <h4 class="text-2xl sm:text-3xl self-start xl:self-center">Otras</h4>
+    <div class="w-full flex flex-col gap-5">
+      <section
+        class="grid grid-cols-1 md:grid-cols-2 gap-5 justify-center items-center"
+      >
+        {
+          data.skills.technicalls.others.map((skill) => (
+            <Card name={skill.name} link={skill.url} />
+          ))
+        }
+      </section>
+    </div>
+  </div>
+</div>
