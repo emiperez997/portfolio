@@ -42,36 +42,38 @@
       >
         <li>
           <a
-            class="menu-link"
             href="#"
-            class="block py-2 px-3 bg-orange-400 rounded md:bg-transparent md:p-0 text-white md:text-orange-400"
-            aria-current="page">Inicio</a
+            class="menu-link block py-2 px-3 rounded md:bg-transparent md:p-0 text-white"
+            aria-current="page"
+            aria-label="inicio"
           >
+            Inicio
+          </a>
         </li>
 
         <li>
           <a
-            class="menu-link"
             href="#proyectos"
-            class="block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-orange-500 hover:bg-orange-500 hover:text-white md:hover:bg-transparent"
+            class="menu-link block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-orange-500 hover:bg-orange-500 hover:text-white md:hover:bg-transparent"
+            aria-label="proyectos"
           >
             Proyectos
           </a>
         </li>
         <li>
           <a
-            class="menu-link"
             href="#tecnologias"
-            class="block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-orange-500 hover:bg-orange-500 hover:text-white md:hover:bg-transparent"
+            class="menu-link block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-orange-500 hover:bg-orange-500 hover:text-white md:hover:bg-transparent"
+            aria-label="tecnologias"
           >
             Tecnologías
           </a>
         </li>
         <li>
           <a
-            class="menu-link"
             href="#sobre-mi"
-            class="block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-orange-500 hover:bg-orange-500 hover:text-white md:hover:bg-transparent"
+            class="menu-link block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-orange-500 hover:bg-orange-500 hover:text-white md:hover:bg-transparent"
+            aria-label="sobre-mi"
           >
             Sobre mí
           </a>
@@ -82,32 +84,43 @@
 </nav>
 
 <script>
-  const menuLinks = document.querySelectorAll(".menu-link");
+  document.addEventListener("astro:page-load", () => {
+    const sections = document.querySelectorAll("section");
+    const navItems = document.querySelectorAll(".menu-link");
 
-  function changeColor(
-    menuLinks: NodeListOf<Element>,
-    event?: HashChangeEvent
-  ) {
-    menuLinks.forEach((link) => {
-      if (event) {
-        if (link.getAttribute("href") === event.newURL.split("/")[3]) {
-          link.classList.add("text-orange-500");
-        } else {
-          link.classList.remove("text-orange-500");
+    const callback = (entries: any[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          navItems.forEach((item) => {
+            if (item.getAttribute("aria-label") == entry.target.id) {
+              item.classList.add("text-yellow-500");
+            } else {
+              item.classList.remove("text-yellow-500");
+            }
+          });
         }
-      } else {
-        if (link.getAttribute("href") === window.location.href.split("/")[3]) {
-          link.classList.add("text-orange-500");
-        } else {
-          link.classList.remove("text-orange-500");
-        }
-      }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.3,
     });
-  }
 
-  window.onhashchange = (event: HashChangeEvent) => {
-    changeColor(menuLinks, event);
-  };
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
 
-  changeColor(menuLinks);
+    // Cleanup function
+    document.onvisibilitychange = () => {
+      if (document.visibilityState === "hidden") {
+        observer.disconnect();
+      } else {
+        sections.forEach((section) => {
+          observer.observe(section);
+        });
+      }
+    };
+  });
 </script>

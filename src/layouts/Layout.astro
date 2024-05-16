@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from "astro:transitions";
 import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
 ---
@@ -8,13 +9,18 @@ import Navbar from "../components/Navbar.astro";
   <head>
     <meta charset="UTF-8" />
     <meta
+      name="title"
+      content="Portfolio de Emiliano Perez | Desarrollador Web Full Stack y Profesor"
+    />
+    <meta
       name="description"
-      content="Emiliano Perez - Desarrollador Full Stack"
+      content="Capacitado para construir aplicaciones funcionales tanto del lado Backend como Frontend. Autodidacta, comprometido y responsable."
     />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content="Portofolio" />
     <title>Emiliano Perez | Portfolio</title>
+    <ViewTransitions />
   </head>
   <body>
     <Navbar />
@@ -28,42 +34,41 @@ import Navbar from "../components/Navbar.astro";
       src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
     ></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <style is:global>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
+
+      :root {
+        color-scheme: light dark;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Nunito", sans-serif !important;
+
+        background: rgb(55, 65, 81);
+        background: radial-gradient(
+          circle,
+          rgba(55, 65, 81, 1) 0%,
+          rgba(17, 24, 39, 1) 100%
+        );
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 100vh;
+        width: 100%;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+
+    <script>
+      window.location.href = "/#";
+    </script>
   </body>
 </html>
-
-<style is:global>
-  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
-
-  :root {
-    color-scheme: light dark;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    font-family: "Nunito", sans-serif !important;
-
-    background: rgb(55, 65, 81);
-    background: radial-gradient(
-      circle,
-      rgba(55, 65, 81, 1) 0%,
-      rgba(17, 24, 39, 1) 100%
-    );
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 100vh;
-    width: 100%;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    html {
-      scroll-behavior: auto;
-    }
-  }
-</style>
-
-<script>
-  window.location.href = "/#";
-</script>
