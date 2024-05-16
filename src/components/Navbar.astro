@@ -54,7 +54,7 @@
         <li>
           <a
             href="#proyectos"
-            class="menu-link block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-orange-500 hover:bg-orange-500 hover:text-white md:hover:bg-transparent"
+            class="menu-link block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-orange-500 hover:bg-orange-500 hover:text-white md:bg-transparent"
             aria-label="proyectos"
           >
             Proyectos
@@ -63,7 +63,7 @@
         <li>
           <a
             href="#tecnologias"
-            class="menu-link block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-orange-500 hover:bg-orange-500 hover:text-white md:hover:bg-transparent"
+            class="menu-link block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-orange-500 hover:bg-orange-500 hover:text-white md:bg-transparent"
             aria-label="tecnologias"
           >
             Tecnologías
@@ -72,7 +72,7 @@
         <li>
           <a
             href="#sobre-mi"
-            class="menu-link block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-orange-500 hover:bg-orange-500 hover:text-white md:hover:bg-transparent"
+            class="menu-link block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-orange-500 hover:bg-orange-500 hover:text-white md:bg-transparent"
             aria-label="sobre-mi"
           >
             Sobre mí
@@ -94,9 +94,10 @@
           navItems.forEach((item) => {
             if (item.getAttribute("aria-label") == entry.target.id) {
               item.classList.add("md:text-orange-500");
+
               item.classList.add("bg-orange-400");
             } else {
-              item.classList.remove("md:text-orange-400");
+              item.classList.remove("md:text-orange-500");
               item.classList.remove("bg-orange-400");
             }
           });
