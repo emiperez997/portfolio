@@ -93,9 +93,11 @@
         if (entry.isIntersecting) {
           navItems.forEach((item) => {
             if (item.getAttribute("aria-label") == entry.target.id) {
-              item.classList.add("text-yellow-500");
+              item.classList.add("md:text-orange-500");
+              item.classList.add("bg-orange-400");
             } else {
-              item.classList.remove("text-yellow-500");
+              item.classList.remove("md:text-orange-400");
+              item.classList.remove("bg-orange-400");
             }
           });
         }
