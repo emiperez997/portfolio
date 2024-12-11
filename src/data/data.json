@@ -12,7 +12,7 @@
       "title": "API - Cody Blog",
       "description": "Proyecto Final del Bootcamp de JavaScript para Backend. Se realizó una API en Nestjs con Prisma como ORM. Se utilizó PostgreSQL para la base de datos. La API permite realizar operaciones CRUD sobre los posts y los usuarios. Se implementó autenticación con JWT y roles de usuario. También está documentada con Swagger y Deployada en Vercel.",
       "github": "https://github.com/emiperez997/final-project-cf",
-      "demo": "https://final-project-cf.vercel.app/",
+      "demo": "https://final-project-cf.vercel.app/docs",
       "date": 2024,
       "technologies": ["Nest.js", "Prisma", "PostgreSQL"]
     },
@@ -47,14 +47,6 @@
       "demo": "https://emiperez997.github.io/worldwide-project/",
       "date": 2023,
       "technologies": ["HTML 5", "Bootstrap 5"]
-    },
-    {
-      "title": "Digistock",
-      "description": "Proyecto final del curso de FullStack Python de Codo a Codo. Desarrollamos un Frontend con HTML, CSS y JavaScript y un Backend con Python y Django. El Frontend fue desarrollado en conjunto y el Backend fue hecho por mi.",
-      "github": "https://github.com/martinigarza/DigiStock.github.io",
-      "demo": "https://martinigarza.github.io/DigiStock.github.io/",
-      "date": 2023,
-      "technologies": ["HTML 5", "CSS 3", "JavaScript", "Python", "Django"]
     },
     {
       "title": "Yudith Autoservicio",
